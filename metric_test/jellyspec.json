@@ -1,0 +1,12 @@
+{
+  "name": "Example Project",
+  "$jellyspecversion": "v1.0.0",
+  "shortname": "metrictest",
+  "runtime": "go122",
+  "entrypoint": "MetricTest",
+  "description": "Takes a name as query and greets you!",
+  "requirements": {
+    "requestType": "POST",
+    "outputType": null
+  }
+}
