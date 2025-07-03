@@ -32,7 +32,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t $IMAGE -f dockerfile .
+          docker build --build-arg GITHUB_TOKEN=${{ secrets.GH_TOKEN }} -t $IMAGE -f dockerfile .
 
       - name: Push Docker image to Artifact Registry
         run: |
